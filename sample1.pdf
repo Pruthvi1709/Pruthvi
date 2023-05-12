@@ -1,0 +1,39 @@
+How can we push large repo to github.
+Purpose: To push the Large files into the github.
+Tools used:
+Git
+LFS
+We can push the large repo to github by using the LFS (Large File Storage).
+1.	We have to create the repository in the local .
+2.	We have to clone the files into the local.
+3.	We have to add the files with morethan 100 mb in the local
+4.	Install the LFS in the git 
+Git lfs install
+5.	We have to track the file extensions by 
+
+git lfs track “*.extension “
+
+git lfs track “*.psd”.
+
+6.	We have to add the git attributes
+
+Git add .gitattributes
+
+7.	We have to add the files into the staging area
+
+git add “*.psd”
+
+8.	We have to commit the files with the comment
+
+Git commit -m “message”
+
+9.	We have to add the remote origin of the repo
+
+Git add remote origin git@github.com:Pruthvi1709/Pruthvi.git 
+
+10.	We have to push the files into the remote
+
+Git push origin -u main
+
+
+
